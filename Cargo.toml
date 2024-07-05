@@ -18,12 +18,17 @@ tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
 
 [dev-dependencies]
 axum = { version = "0.7.5", features = ["http2", "query", "tracing"] }
+base64 = "0.22.1"
+chacha20poly1305 = "0.10.1"
 chrono = { version = "0.4.38", features = ["serde"] }
 derive_builder = "0.20.0"
 derive_more = "0.99.18"
+http = "1.1.0"
 httpmock = "0.7.0"
 mockall = "0.12.1"
+# pretty = "0.12.3"
 serde = { version = "1.0.203", features = ["derive"] }
 serde_json = "1.0.120"
+serde_with = "3.8.3"
 strum = { version = "0.26.3", features = ["derive"] }
 tokio = { version = "1.38.0", features = ["macros", "rt", "rt-multi-thread"] }
