@@ -18,7 +18,7 @@ tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
 
 [dev-dependencies]
 axum = { version = "0.7.5", features = ["http2", "query", "tracing"] }
-chrono = "0.4.38"
+chrono = { version = "0.4.38", features = ["serde"] }
 derive_builder = "0.20.0"
 derive_more = "0.99.18"
 httpmock = "0.7.0"
