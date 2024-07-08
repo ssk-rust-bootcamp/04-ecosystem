@@ -8,11 +8,14 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.86"
 bytes = "1.6.0"
+dashmap = "6.0.1"
+futures = "0.3.30"
 opentelemetry = "0.23.0"
 opentelemetry-otlp = { version = "0.16.0", features = ["tonic"] }
 opentelemetry_sdk = { version = "0.23.0", features = ["rt-tokio"] }
 thiserror = "1.0.61"
 tokio = { version = "1.38.0", features = ["fs", "time"] }
+tokio-util = { version = "0.7.11", features = ["full"] }
 tracing = "0.1.40"
 tracing-appender = "0.2.3"
 tracing-opentelemetry = "0.24.0"
@@ -28,6 +31,7 @@ derive_builder = "0.20.0"
 derive_more = "0.99.18"
 http = "1.1.0"
 httpmock = "0.7.0"
+loom = "0.7.2"
 mockall = "0.12.1"
 # pretty = "0.12.3"
 serde = { version = "1.0.203", features = ["derive"] }
